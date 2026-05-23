@@ -8,7 +8,7 @@ const pokemonIniciales = [
 // Práctica 2: Consumo de la PokéAPI
 const consultarPokemon = async (id) => {
     try {
-        const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+        const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
         const respuesta = await fetch(url);
         const pokemon = await respuesta.json();
         console.log(pokemon);
