@@ -23,7 +23,7 @@ const obtenerPrimeros150 = async () => {
     
     for (let i = 1; i <= 150; i++) {
         try {
-            const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+            const url = `https://pokeapi.co/api/v2/pokemon/${i}/`;
             const respuesta = await fetch(url);
             const pokemon = await respuesta.json();
             crearTarjetaAPI(pokemon);
